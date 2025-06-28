@@ -21,14 +21,15 @@
             -ms-overflow-style: auto;  /* IE and Edge - allow default scrollbar */
             scrollbar-width: thin;  /* Firefox - make scrollbar visible and thinner */
             scrollbar-color: #9ca3af #e5e7eb; /* thumb color track color */
+            overscroll-behavior-y: contain; /* 防止觸底/觸頂時的頁面彈跳或刷新行為 */
         }
         /* Webkit (Chrome, Safari, Opera) 瀏覽器的捲軸樣式 */
         .scrollable-content::-webkit-scrollbar {
-            width: 12px; /* 捲軸寬度 */
+            width: 24px; /* 捲軸寬度 */
         }
         .scrollable-content::-webkit-scrollbar-track {
             background: #e5e7eb; /* 捲軸軌道顏色 */
-            border-radius: 6px;
+            border-radius: 24px;
         }
         .scrollable-content::-webkit-scrollbar-thumb {
             background-color: #9ca3af; /* 捲軸滑塊顏色 */
